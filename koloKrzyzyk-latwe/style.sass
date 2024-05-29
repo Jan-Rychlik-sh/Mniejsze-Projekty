@@ -1,0 +1,53 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    border-radius: 5px
+html
+    width: 100vw
+    height: 100vh
+    font-family: cursive
+    font-size: 30px
+    body
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: #ccc
+        color: #5a25b4
+        height: 100%
+        #container
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            #elements
+                width: 400px
+                height: 400px
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-between
+                .square
+                    background-color: #ccc
+                    border: 5px solid #5a25b4
+                    width: 32.8%
+                    height: 32.8%
+                    font-size: 70px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    font-weight: bold
+                    transition: .2s all
+
+                .square:hover
+                    filter: brightness(70%)
+                    cursor: pointer
+            #info
+                height: 50px
+                #winner
+                    span
+                        cursor: pointer
+                        color: #f700ff
+                        transition: .2s all
+                    span:hover
+                        color: #a200aa
+                        text-decoration: underline

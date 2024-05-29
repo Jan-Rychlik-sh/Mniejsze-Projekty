@@ -1,0 +1,75 @@
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+html
+    height: 100vh
+    width: 100vw
+    background-color: #000
+    font-family: monospace
+    color: #bbb
+    font-size: 50px
+    body
+        display: flex
+        height: 100%
+        align-items: center
+        justify-content: center
+        #container
+            max-height: 600px
+            max-width: 1200px
+            width: 100%
+            height: 80%
+            display: flex
+            flex-wrap: wrap
+            #password
+                background-color: #444
+                height: 20%
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 100%
+                text-align: center
+            #gallows
+                height: 60%
+                width: 50%
+                img
+                    width: 100%
+            #letters
+                width: 50%
+                height: 60%
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+            .letter
+                padding: 5px
+                margin: 2px
+                height: 16%
+                width: 12%
+                font-size: 2vw
+                border: 3px solid #bbb
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 15px
+                background-color: #000
+                transition: .5s all
+            .letter:hover
+                cursor: pointer
+                color: white
+                border-color: white
+                background-color: #444
+            .usedWin
+                border-color: #0c0
+                color: #0c0
+                background-color: #050
+            .usedLose
+                border-color: #c00
+                color: #c00
+                background-color: #500
+            .win
+                color: #0c0
+            .again
+                cursor: pointer
+                color: #00c
+            .lose
+                color: #c00

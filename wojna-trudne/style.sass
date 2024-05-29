@@ -1,0 +1,98 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    border-radius: 5px
+html
+    width: 100vw
+    height: 100vh
+    font-family: cursive
+    font-size: 30px
+    background-image: url(tlo.jpg)
+    background-size: cover
+    background-position: right
+    body
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        #container
+            width: 90%
+            height: 90%
+            display: flex
+            flex-direction: column
+            background-color: #fff8
+            padding: .5rem
+            #P2
+                display: flex
+                justify-content: right
+            .player
+                width: 100%
+                height: 50%
+                display: flex
+                align-items: center
+                justify-items: center
+                .status
+                    .card
+                        color: #ffffff
+                        background-color: #41250f
+                        height: 30vh
+                        width: 20vh
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        font-size: 80px
+                        transition: .2s all
+                        border: 6px solid #381208
+                    .card:hover
+                        filter: brightness(150%)
+                        cursor: pointer
+                    .winningCards
+                        color: #ffffff
+                        background-color: #41250f24
+                        height: 30vh
+                        width: 20vh
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        font-size: 50px
+                        transition: .2s all
+                        border: 6px solid #381208
+                    #WC1
+                        margin-left: auto
+                    #WC2
+                        margin-right: auto
+                    .howMany
+                        text-align: center
+                        color: #381208
+
+                .battleField
+                    color: #41250f
+                    height: 30vh
+                    width: 20vh
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin: auto
+                    font-size: 150px
+                    transition: .2s all
+                    border: 6px solid #381208
+                    position: relative
+
+                .winCard
+                    background-color: white
+                    animation: winEdges 1s linear 0s infinite normal none
+@keyframes winEdges
+    0%
+        border-color: red
+    20%
+        border-color: green
+    40%
+        border-color: yellow
+    60%
+        border-color: pink
+    80%
+        border-color: blue
+    100%
+        border-color: red

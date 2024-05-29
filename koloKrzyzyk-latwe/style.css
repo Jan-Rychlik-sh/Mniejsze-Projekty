@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-family: cursive;
+  font-size: 30px;
+}
+html body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  color: #5a25b4;
+  height: 100%;
+}
+html body #container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+html body #container #elements {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+html body #container #elements .square {
+  background-color: #ccc;
+  border: 5px solid #5a25b4;
+  width: 32.8%;
+  height: 32.8%;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: 0.2s all;
+}
+html body #container #elements .square:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+}
+html body #container #info {
+  height: 50px;
+}
+html body #container #info #winner span {
+  cursor: pointer;
+  color: #f700ff;
+  transition: 0.2s all;
+}
+html body #container #info #winner span:hover {
+  color: #a200aa;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer async></script>
+    <script src="filtres.js" defer async></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <aside id="filter">
+        <label>
+            <strong>invert:</strong>
+            <input type="number" value="0" id="invert">
+        </label>
+        <label>
+            <strong>bright:</strong>
+            <input type="number" value="100" id="brightness">
+        </label>
+        <label>
+            <strong>hue:</strong>
+            <input type="number" value="0" id="hue_rotate">
+        </label>
+        <button id="filtry">Ustaw</button>
+    </aside>
+    <div id="container">
+        <input type="text" id="result">
+        <div id="row1" class="row">
+            <div id="c" class="option">C</div>
+            <div id="equals" class="option">=</div>
+            <div id="power" class="option">^</div>
+        </div>
+        <div id="row2" class="row">
+            <div id="divide" class="option">/</div>
+            <div id="multiple" class="option">×</div>
+            <div id="subtract" class="option">-</div>
+        </div>
+        <div id="row3" class="row">
+            <div id="add" class="option">+</div>
+            <div id="dot" class="option">.</div>
+            <div id="zero" class="option">0</div>
+        </div>
+        <div id="row4" class="row">
+            <div id="nine" class="option">9</div>
+            <div id="eigth" class="option">8</div>
+            <div id="seven" class="option">7</div>
+        </div>
+        <div id="row5" class="row">
+            <div id="six" class="option">6</div>
+            <div id="five" class="option">5</div>
+            <div id="four" class="option">4</div>
+        </div>
+        <div id="row6" class="row">
+            <div id="three" class="option">3</div>
+            <div id="two" class="option">2</div>
+            <div id="one" class="option">1</div>
+        </div>
+    </div>
+</body>
+
+</html>
